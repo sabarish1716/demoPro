@@ -50,15 +50,15 @@ const  readFile = (filePath) => {
       fileCreation(fileA, result);
       store.A.add(result);
     }
-    if (result > 100) {
+    else if (result > 100) {
       fileCreation(fileB, result);
       store.B.add(result);
     }
-    if (result > 60) {
+    else if (result > 60) {
       fileCreation(fileC, result);
       store.C.add(result);
     }
-    if (result <= 60) {
+  else  if (result <= 60) {
       fileCreation(fileD, result);
       store.D.add(result);
     }
